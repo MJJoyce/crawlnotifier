@@ -2,7 +2,7 @@ CRAWL_COMMAND="$1 $2 $3"
 CRAWL_NAME=$2
 NUTCH_PATH=$4
 SCREEN_NAME=$STY
-OUTPUT_PATH="/mnt/var/lib/hadoop/"
+OUTPUT_PATH="/mnt/var/lib/hadoop/local_data/"
 cd "$4/runtime/deploy"
 
 ./bin/crawl $CRAWL_COMMAND | tee bashout.txt
