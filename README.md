@@ -1,7 +1,8 @@
 # crawlnotifier
 
 This script runs the nutch crawl and makes sure that it notifies the relevent users after the crawl has ended.
-After the crawl it transfers the output folder of the crawl to local.
+After the crawl it transfers the output folder of the crawl to local. It stores the satus in a file called bashout.txt and 
+gives the path to it in the email.
 
 USAGE:
 
