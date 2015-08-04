@@ -3,7 +3,7 @@ CRAWL_NAME=$2
 NUTCH_PATH=$4
 SCREEN_NAME=$STY
 OUTPUT_PATH="/mnt/var/lib/hadoop/local_data/"
-cd "$4/runtime/deploy"
+cd "$NUTCH_PATH/runtime/deploy"
 
 ./bin/crawl $CRAWL_COMMAND | tee bashout.txt
 
@@ -14,7 +14,7 @@ OUTPUT_PATH_FULL="$OUTPUT_PATH$CRAWL_NAME_$OUTPUT_FOLDER"
 mkdir $OUTPUT_PATH_FULL
 
 
-STATUS="The $CRAWL_NAME crawl has concluded on the EMR on the screen $SCREEN_NAME. Find the status in the file bashout.txt in $4/runtime/deploy"
+STATUS="The $CRAWL_NAME crawl has concluded on the EMR on the screen $SCREEN_NAME. Find the status in the file bashout.txt in $NUTCH_PATH/runtime/deploy"
 SUBJECT="CRAWL STATUS $CRAWL_NAME crawl completed on EMR"
 echo $STATUS | mail -s "$SUBJECT" memex-jpl@googlegroups.com
 
