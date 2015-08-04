@@ -6,7 +6,7 @@ gives the path to it in the email.
 
 USAGE:
 
-sh nutchrun.sh <url seedlist folder> <output folder> <crawl rounds> <nutch home directory path>
+sh nutchrun.sh /<url seedlist folder/> <output folder> <crawl rounds> <nutch home directory path>
 
 eg:
 sh nutchrun.sh urls_seedlist_folder_name output_folder_name 10 $NUTCH_HOME
