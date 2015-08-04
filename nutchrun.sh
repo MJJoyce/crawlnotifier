@@ -5,7 +5,7 @@ SCREEN_NAME=$STY
 OUTPUT_PATH="/mnt/var/lib/hadoop/local_data/"
 cd "$NUTCH_PATH/runtime/deploy"
 
-./bin/crawl $CRAWL_COMMAND | tee bashout.txt
+./bin/crawl $CRAWL_COMMAND
 
 DATE=$(date)
 TEMP="${DATE// /_}"
